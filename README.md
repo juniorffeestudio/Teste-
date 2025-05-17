@@ -49,11 +49,14 @@ Tab:AddButton({
 
 
 Tab:AddButton({
-    Name = "Nameless Admin",
+    Name = "Mao de deus",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
-  end    
-})
+  local args = {
+    [1] = "God's Hand"
+}
+
+game:GetService("ReplicatedStorage").EquipSlapEvent:FireServer(unpack(args))
+      
 
 
 Tab:AddButton({
